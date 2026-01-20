@@ -1,0 +1,41 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FLEX LAYOUT */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}
