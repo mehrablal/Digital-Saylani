@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="saylani_logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
-
+<style>
+  body {
+    overflow-x: hidden;
+  }
+</style>
   <style>
     html {
       scroll-behavior: smooth;
@@ -59,30 +63,53 @@
     </div>
   </header>
 
-  <!-- HERO -->
-<section id="home" class="relative w-full h-screen bg-gradient-to-br from-green-50 via-green-100 to-green-50 flex flex-col md:flex-row items-center justify-center px-6 py-16">
-    <div>
-      <h2 class="text-5xl font-extrabold leading-tight mb-6">
-        Saylani Says, <br> No One Sleeps Hungry.
+<!-- HERO -->
+<section
+  id="home"
+  class="min-h-screen bg-gradient-to-br from-green-50 via-green-100 to-green-50 flex items-center px-6 py-16"
+>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- TEXT CONTENT -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
+        Saylani Says, <br />
+        <span class="text-green-700">No One Sleeps Hungry.</span>
       </h2>
-      <p class="text-lg mb-8 text-gray-600">
-        Saylani Roti Bank provides freshly cooked meals to those in need ensuring dignity,respect,and hope every single
-        day.
+
+      <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
+        Saylani Roti Bank provides freshly cooked meals to those in need,
+        ensuring dignity, respect, and hope every single day.
       </p>
-      <div class="flex gap-4">
-        <a href="#how" class="bg-green-700 text-white px-7 py-3 rounded-full font-semibold">
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a
+          href="#how"
+          class="bg-green-700 text-white px-7 py-3 rounded-full font-semibold hover:bg-green-800 transition"
+        >
           How Roti Bank Works
         </a>
-        <a href="#ai" class="border border-green-700 text-green-700 px-7 py-3 rounded-full font-semibold">
+
+        <a
+          href="#ai"
+          class="border border-green-700 text-green-700 px-7 py-3 rounded-full font-semibold hover:bg-green-700 hover:text-white transition"
+        >
           Ask AI Assistant
         </a>
       </div>
     </div>
-    <div class="text-center">
-      <img src="theam pic.webp" class="rounded-3xl shadow-lg" alt="Food Distribution">
-    </div>
-  </section>
 
+    <!-- IMAGE -->
+    <div class="flex justify-center">
+      <img
+        src="theam pic.webp"
+        alt="Food Distribution"
+        class="rounded-2xl shadow-x1 max-w-sm md:max-w-md"
+      />
+    </div>
+
+  </div>
+</section>
   <!-- Floating decorative circles -->
   <div class="absolute -top-32 -left-32 w-96 h-96 bg-green-200/30 rounded-full animate-pulse-slow"></div>
   <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-green-300/20 rounded-full animate-pulse-slow"></div>
